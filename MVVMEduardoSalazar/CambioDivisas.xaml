@@ -6,13 +6,21 @@
              Title="CambioDivisas">
 
     <ContentPage.BindingContext>
-        <local: CambioDivisasViewModel/>
+        <local:CambioDivisasViewModel  />
     </ContentPage.BindingContext>
     
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Bienvenido a mi primera vez con MVVM:)!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Entry x:Name="EntryDolares"
+               Placeholder="Ingrese el valor en DOLARES"
+               Text="{Binding ValorDolares}"/>
+
+        <Entry x:Name="EntryEuros"
+            Placeholder="Ingrese el valor en EUROS"
+            Text="{Binding ValorEuros}"/>
     </VerticalStackLayout>
 </ContentPage>
